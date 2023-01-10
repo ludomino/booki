@@ -1,0 +1,155 @@
+/* hosting & poupular section style */
+
+/* hosting section*/
+
+.hosting-and-popular {
+  display: flex;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+#hosting-section {
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 3%;
+  width: 65%;
+}
+
+.hosting-bloc-first-line,
+.hosting-bloc-seconde-line {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.hosting-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 4px 14px 1px #d7d8d9;
+  margin-top: 30px;
+  margin-bottom: 7px;
+  position: relative;
+  width: 30%;
+}
+.hosting-card a {
+  border: 4px solid white;
+  border-radius: 20px;
+  height:100%;
+  position: absolute;
+  width:100%;
+}
+.hosting-card a:hover, .popular-card a:hover, .hosting-card a:focus, .popular-card a:focus, .hosting-card a:active, .popular-card a:active {
+  box-shadow: 0px 0px 7px #6a6b6b;
+}
+.hosting-image {
+  border-radius: 16px 16px 0px 0px;
+  height: 120px;
+  object-fit: cover;
+  width:100%;
+}
+.hosting-infos {
+  margin-top: 132px;
+  padding-left: 16px;
+  padding-right:16px;
+  padding-bottom: 10px;
+}
+.hosting-infos h3 {
+  font-size: 16px;
+  object-fit: fill;
+}
+
+.hosting-infos i {
+  font-size: 12px;
+  padding-bottom: 26px;
+}
+
+.star-icon,
+.blue-star {
+  color: #0065FC;
+}
+
+.star-icon,
+.grey-star {
+  color: #F2F2F2;
+}
+
+#more {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#more a:hover, #more a:focus, #more a:active {
+  color: #0065FC;
+}
+
+
+
+
+
+/* popular section */
+
+.popular-section {
+  align-content: space-between;
+  background-color: #F2F2F2;
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  height: auto;
+  margin-left: 42px;
+  padding: 3%;
+  position: relative;
+  width: 32%;
+}
+.popular-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-card {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 4px 14px 1px #d7d8d9;
+  height: 142px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.popular-card a {
+  border: 4px solid white;
+  border-radius: 20px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.popular-image {
+  border-radius: 16px 0px 0px 16px;
+  height: 134px;
+  object-fit: cover;
+  width:35%;
+}
+
+.popular-infos {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-left: 40%;
+   margin-right: 6%;
+   padding-top: 13px;
+   padding-bottom: 10px;
+}
+.popular-infos h3 {
+  font-size: 16px;
+  object-fit: fill;
+}
+.popular-infos i {
+  font-size: 12px;
+  padding-bottom: 26px;
+}
