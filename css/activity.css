@@ -1,55 +1,48 @@
 
 /* ACtivity section style */
 
-/* .activity-section {
+#activity-section {
+  border-radius: 20px;
   display: flex;
-  padding-left: 46px;
-  padding-right: 46px;
-
-} */
-
-#activity-section-card {
-  display: flex;
-  flex-direction: row;
-  height: 460px;
-  justify-content: space-between;
-  margin-top: 55px;
-  padding-left: 46px;
-  padding-right: 46px;
+  flex-direction: column;
+  height: auto;
+  padding-top: 3%;
   width: 100%;
 }
 
-.activity-image {
-  border-radius: 16px 16px 0px 0px;
-  height: 400px;
-  object-fit: cover;
+.activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 }
 
 .activity-card {
+  background-color: white;
   border-radius: 20px;
   box-shadow: 1px 4px 14px 1px #d7d8d9;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  margin-top: 30px;
+  margin-bottom: 7px;
   position: relative;
   width: 22%;
 }
-.activity-card a {
-  border-radius: 20px;
-  height: 100%;
-  position: absolute;
+
+.activity-image {
+  border-radius: 16px 16px 0px 0px;
+  height: 90%;
+  object-fit: cover;
   width: 100%;
 }
-.activity-card a:hover, .activity-card a:focus, .activity-card a:active {
-  box-shadow: 0px 0px 7px #6a6b6b;
-}
-
-
 .activity-card h3 {
   font-size: 16px;
   object-fit: fill;
-  padding-left: 16px;
-  padding-right:16px;
-  padding-bottom: 10px;
+  padding: 21px;
+  margin: 0px;
+}
+
+.activite-list .activity-card article {
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px #E0E0E0;
+  border-radius: 25px;
 }

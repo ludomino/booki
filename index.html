@@ -21,12 +21,9 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <a href="#">
-            <img src="images/logo/Booki.png" alt="Booki logo">
-          </a>
+        <div id="logo">
+          <img src="images/logo/Booki@3x.png" alt="Booki logo">
         </div>
-        <div>
           <ul class="menu">
             <li class="hosts">
               <a href="#hosting-section">Hébergements</a>
@@ -35,7 +32,6 @@
               <a href="#activity-section">Activités</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
@@ -55,36 +51,31 @@
       </div>
 
       <!-- filter -->
-      <div class="filter-section">
-        <div class="filter">
-          <h2>Filtres</h2>
-
-          <!-- search infos -->
-          <div class="filter-category">
-            <div class="filter-choices">
-              <i class="fa-solid fa-money-bill-wave"></i>
-              <p> Économique </p>
-            </div>
-            <div class="filter-choices">
-              <i class="fa-solid fa-child-reaching"></i>
-              <p> Familial </p>
-            </div>
-            <div class="filter-choices">
-              <i class="fa-solid fa-heart"></i>
-              <p> Romantique </p>
-            </div>
-            <div class="filter-choices">
-              <i class="fa-solid fa-dog"></i>
-              <p> Animaux autorisés </p>
-            </div>
-          </div>
+      <div id="filter">
+        <h2>Filtres</h2>
+        <div class="filter-category">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <p>Économique</p>
         </div>
-          <div class="filter-infos">
-            <i class="fa-solid fa-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </div>
+        <div class="filter-category">
+          <i class="fa-solid fa-child-reaching"></i>
+          <p>Familial</p>
+        </div>
+        <div class="filter-category">
+          <i class="fa-solid fa-heart"></i>
+          <p>Romantique</p>
+        </div>
+        <div class="filter-category">
+          <i class="fa-solid fa-dog"></i>
+          <p>Animaux autorisés</p>
+        </div>
+      </div>
+      <div class="filter-infos">
+        <i class="fa-solid fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </section>
+
 
     <!-- section hosting and popular -->
     <section class="hosting-and-popular">
@@ -244,7 +235,6 @@
               </div>
             </div>
           </div>
-
         </article>
 
         <article class="popular-card">
@@ -267,34 +257,36 @@
     </section>
 
       <!-- activity section in marseille -->
-      <section class="activity-section">
+       <section id="activity-section">
         <h1>Activités à Marseille</h1>
-        <div id="activity-section-card" >
-          <div class="activity-card">
+
+        <div class="activity-list" >
+          <article class="activity-card">
             <a href="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
               <img class="activity-image" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activité Vieux-Port à Marseille">
             </a>
-            <h3>Vieux-Port</h3>
-          </div>
-
-          <div class="activity-card">
+            <div class="activity-card-title">
+              <h3>Vieux-Port</h3>
+            </div>
+          </article>
+          <article class="activity-card">
             <a href="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
               <img class="activity-image" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activité Fort de Pomègues à Marseille">
             </a>
             <h3>Fort de Pomègues</h3>
-          </div>
-          <div class="activity-card">
+          </article>
+          <article class="activity-card">
             <a href="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
               <img class="activity-image" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activité Parc national des Calanques à Marseille">
             </a>
             <h3>Parc national des Calanques</h3>
-          </div>
-          <div class="activity-card">
+          </article>
+          <article class="activity-card">
             <a href="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
               <img class="activity-image" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activité Notre-Dame-de-la-Garde à Marseille">
             </a>
             <h3>Notre-Dame-de-la-Garde</h3>
-          </div>
+          </article>
         </div>
       </section>
     </main>

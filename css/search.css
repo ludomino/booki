@@ -8,10 +8,6 @@ input {
   width: 232px;
 }
 
-.search {
-  padding-left: 46px;
-  padding-top: 30px;
-}
 .search p {
   padding-top: 10px;
   padding-bottom: 20px;
@@ -68,46 +64,39 @@ input[type=text]:focus {
 
 
 /* section filter */
-.filter-section{
+#filter {
+  display: flex;
+  align-items: center;
   padding-top: 30px;
 }
 
-.filter {
-  column-gap: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: bold;
-  font-size: 18px;
-}
-.filter-category {
-  display: flex;
-  margin-left: -33px;
-}
-.filter-choices {
-  align-items: center;
-  border: 3px solid #F2F2F2;
+#filter .filter-category {
+  margin: 0px 10px;
   border-radius: 30px;
+  border: 2px solid #F2F2F2;
   display: flex;
-  margin-left: 40px;
-  padding-right: 15px;
-  padding-left: 35px;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 1s;
 }
-.filter-choices:hover, .filter-choices:focus, .filter-choices:active {
+
+#filter .filter-category i {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#filter .filter-category:hover, .filter-category:focus, .filter-category:active {
   background-color: #DEEBFF;
   cursor: pointer;
 }
-.filter-choices i {
-  height: 47px;
-  font-size: 20px;
-  padding: 14px;
-  position: absolute;
-  margin-left: -45px;
-  margin-top: -13px;
-  width: 47px;
-}
 
-.filter-choices p {
-  padding-left: 10px;
+#filter .filter-category p {
+  padding: 0px 15px;
 }
 
 .filter-infos {
@@ -118,13 +107,12 @@ input[type=text]:focus {
 }
 .filter-infos p {
   font-size: 16px;
-  padding-left: 3px;
+  padding: 0px 10px;
 }
 
 .fa-info {
   border: 3px solid #F2F2F2;
   border-radius: 50%;
-  color: #0065FC;
   font-size: 12px;
   height: 25px;
   padding-top: 2px;
