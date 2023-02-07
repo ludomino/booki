@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf8" />
     <title> Booki </title>
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/hosting.css">
-    <link rel="stylesheet" href="css/activity.css">
+
+    <!-- media query -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,13 +43,12 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <!-- search bar  -->
-      <div class="search-bar">
         <form method="post" action="#" id="form">
           <i class="fa-solid fa-location-dot"></i>
           <input type="text" name="localisation" placeholder="Marseille, France">
           <button type="button" class="button-search">Rechercher</button>
+          <button type="button" class="button-search-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-      </div>
 
       <!-- filter -->
       <div id="filter">
@@ -201,31 +201,14 @@
           <i class="fa-solid fa-chart-line"></i>
         </div>
 
-        <article class="popular-card">
-          <a href="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-            <img class="popular-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin à Marseille">
-          </a>
-          <div class="popular-infos">
-            <h3>Hôtel Le soleil du matin</h3>
-            <p>Nuit à partir de <strong>128€</strong></p>
-            <div class="star-icon">
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star grey-star"></i>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <div class="popular-card">
-            <a href="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
-              <img class="popular-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d’hôtes Au cœur de l’eau à Marseille">
+        <div class="popular-bloc-line">
+          <article class="popular-card">
+            <a href="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+              <img class="popular-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin à Marseille">
             </a>
             <div class="popular-infos">
-              <h3>Chambres d’hôtes Au cœur de l’eau</h3>
-              <p>Nuit à partir de <strong>71€</strong></p>
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>Nuit à partir de <strong>128€</strong></p>
               <div class="star-icon">
                 <i class="fa-solid fa-star blue-star"></i>
                 <i class="fa-solid fa-star blue-star"></i>
@@ -234,30 +217,47 @@
                 <i class="fa-solid fa-star grey-star"></i>
               </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="popular-card">
-          <a href="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-            <img class="popular-image" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc à Marseille">
-          </a>
-          <div class="popular-infos">
-            <h3>Hôtel Bleu et Blanc</h3>
-            <p>Nuit à partir de <strong>68€</strong></p>
-            <div class="star-icon">
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star blue-star"></i>
-              <i class="fa-solid fa-star grey-star"></i>
+          <article class="popular-card">
+              <a href="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                <img class="popular-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d’hôtes Au cœur de l’eau à Marseille">
+              </a>
+              <div class="popular-infos">
+                <h3>Chambres d’hôtes Au cœur de l’eau</h3>
+                <p>Nuit à partir de <strong>71€</strong></p>
+                <div class="star-icon">
+                  <i class="fa-solid fa-star blue-star"></i>
+                  <i class="fa-solid fa-star blue-star"></i>
+                  <i class="fa-solid fa-star blue-star"></i>
+                  <i class="fa-solid fa-star blue-star"></i>
+                  <i class="fa-solid fa-star grey-star"></i>
+                </div>
+              </div>
+          </article>
+
+          <article class="popular-card">
+            <a href="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+              <img class="popular-image" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc à Marseille">
+            </a>
+            <div class="popular-infos">
+              <h3>Hôtel Bleu et Blanc</h3>
+              <p>Nuit à partir de <strong>68€</strong></p>
+              <div class="star-icon">
+                <i class="fa-solid fa-star blue-star"></i>
+                <i class="fa-solid fa-star blue-star"></i>
+                <i class="fa-solid fa-star blue-star"></i>
+                <i class="fa-solid fa-star blue-star"></i>
+                <i class="fa-solid fa-star grey-star"></i>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
+        </section>
       </section>
-    </section>
 
       <!-- activity section in marseille -->
-       <section id="activity-section">
+      <section id="activity-section">
         <h1>Activités à Marseille</h1>
 
         <div class="activity-list" >
@@ -302,7 +302,7 @@
                         <a href="#">Fonctionnement du site</a>
                     </li>
                     <li class="footer-link">
-                        <a href="#">Conditions générales de vente</a>
+                        <a href="#">Conditions générales</a>
                     </li>
                     <li class="footer-link">
                         <a href="#">Données et confidentialité</a>
