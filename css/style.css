@@ -5,9 +5,9 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0px 50px;
-    font-size: 18px;
+  margin: 0;
+  padding: 0px 50px;
+  font-size: 18px;
 }
 
 a {
@@ -21,7 +21,7 @@ li {
 
 h1 {
   font-size: 22px;
-  font-weight: bold;
+  font-style: bold;
   margin: 0;
 }
 
@@ -97,9 +97,9 @@ footer {
   padding-top: 45px;
 }
 .footer {
+  line-height: 19px;
   padding-bottom: 30px;
   width: 32%;
-  line-height: 19px;
 }
 .footer h2 {
   font-size: 18px;
@@ -133,13 +133,13 @@ form {
 }
 
 input {
-  padding: 15px;
-  width: 235px;
   border: 1px solid #F2F2F2;
   color: #000000;
   font-weight: bold;
   font-size: 18px;
   outline: none;
+  padding: 15px;
+  width: 235px;
 }
 input[type=text]:focus {
   border: 1px solid #F2F2F2;
@@ -179,26 +179,32 @@ input[type=text]:focus {
 /**********************  SECTION FILTER *********************/
 #filter {
   display: flex;
-  justify-content: space-between;
   padding-top: 30px;
-  width: 70%;
 }
 
 #filter .filter-category {
-  margin: 0px;
+  align-items: center;
   border-radius: 30px;
   border: 2px solid #F2F2F2;
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
   cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  margin: 0px;
   transition: background-color 1s;
-  align-items: center;
 }
 
+.filter-first-line,
+  .filter-second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+  }
+
 #filter .filter-category i {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   padding-left: 16px;
   width: 0px;
@@ -495,7 +501,7 @@ input[type=text]:focus {
 
   #filter {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-top: 30px;
     width: 100%;
   }
@@ -578,7 +584,7 @@ input[type=text]:focus {
 
 
 
-/* media query for MOBILE SCREEN < 992px  */
+/* media query for MOBILE SCREEN > 768px  */
 @media (max-width: 768px) {
   body {
   padding: 0px 5px;
@@ -590,6 +596,7 @@ input[type=text]:focus {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 15px;
+    margin-bottom: unset;
   }
 
   nav a {
@@ -597,18 +604,23 @@ input[type=text]:focus {
   }
 
   ul.menu {
-    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
-    align-items: center;
+    padding-bottom: unset;
+    width: 100%;
 
+  }
+
+  li.hosts, li.activities {
+    padding-bottom: 20px;
+    width: 100%;
   }
 
   li.hosts:hover, li.activities:hover, li.hosts:focus, li.activities:focus, li.hosts:active, li.activities:active {
     border-top: none;
     border-bottom: 3px solid #0065FC;;
-    width: 50%;
+    width: 100%;
   }
 /**********************  FOOTER *********************/
   footer {
@@ -622,12 +634,8 @@ input[type=text]:focus {
     padding: 3%;
   }
 
-  .search h1 {
-    text-align: center;
-  }
-
   input {
-    width: 232px;
+    width: 100%;
   }
 
   .button-search-mobile{
@@ -647,9 +655,18 @@ input[type=text]:focus {
   }
 
   #filter {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .filter-first-line,
+  .filter-second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
     width: 100%;
   }
   .filter-infos {
@@ -657,15 +674,9 @@ input[type=text]:focus {
   }
 
   #filter .filter-category {
-    margin: 0px;
-    border-radius: 30px;
-    border: 2px solid #F2F2F2;
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 1s;
-    align-items: center;
+    margin: 1%;
+    min-width: 50%;
+    justify-content: unset;
   }
 
 /**********************  hosting & popular media query *********************/
