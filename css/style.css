@@ -21,7 +21,7 @@ li {
 
 h1 {
   font-size: 22px;
-  font-style: bold;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -125,7 +125,7 @@ li.footer-link:hover a, li.footer-link:focus a, li.footer-link:active a {
 .search p {
   padding-top: 10px;
   padding-bottom: 20px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 form {
@@ -481,13 +481,12 @@ input[type=text]:focus {
     align-items: flex-start;
     background-color: #F2F2F2;
     display: flex;
+    height: 225px;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 60px;
     padding-left:46px;
     padding-top: 45px;
-    width: 879,65px;
-    height: 225px;
   }
 
 /**********************  SECTION SEARCH & FILTER *********************/
