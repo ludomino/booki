@@ -505,6 +505,14 @@ input[type=text]:focus {
     width: 100%;
   }
 
+  .filter-first-line,
+  .filter-second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
 /**********************  hosting & popular media query *********************/
   .hosting-and-popular {
     display: flex;
